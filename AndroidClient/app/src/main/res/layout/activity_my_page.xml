@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#16A7F6">
+
+        <!-- X .. [~~][~~] -->
+
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <!-- X -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <Button android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="#00000000"
+                    android:textSize="20dp"
+                    android:textColor="#FFF"
+                    android:text="X"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="left|top"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <Button android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="#00000000"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:text="작성완료"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_preview"/>
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="#00000000"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:text="미리보기"
+                    android:id="@+id/fill_complete"
+                    android:layout_toLeftOf="@+id/btn_preview"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <!-- TextView should be ImageView, it'll contain profile picture -->
+
+            <TextView
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:background="#FFF"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                -<LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#F3FE28"
+                    android:text="홍길동"
+                    android:id="@+id/profile_name"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#FFF"
+                    android:text="이력서"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:text="연락처 설정 >"
+                    android:id="@+id/to_contact_set"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- rest window of profile window-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#E8ECEF">
+
+        <!-- First Block -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="10dp">
+
+            <!-- First Block - 학력 -->
+            <LinearLayout
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="15dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:textSize="15dp"
+                    android:text="학력"
+                    android:layout_weight="4"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:background="#00000000"
+                    android:textSize="15dp"
+                    android:textColor="#16A7F6"
+                    android:text="강원대(춘천) 컴퓨터과학전공(4년) 졸업예정 > "
+                    android:gravity="left"
+                    android:layout_weight="10"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <!-- Draw Short Line -->
+
+            <View
+                android:layout_height="0.3dp"
+                android:layout_width="wrap_content"
+                android:background="#E8ECEF"/>
+
+            <!-- First Block - 경력 -->
+
+            <LinearLayout
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="15dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:textSize="15dp"
+                    android:text="경력"
+                    android:layout_weight="4"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="10">
+
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:background="#00000000"
+                        android:textSize="15dp"
+                        android:textColor="#16A7F6"
+                        android:text="신입 사원입니다."
+                        android:gravity="left"
+                        android:layout_weight="6"
+                        android:singleLine="true"/>
+
+                    <LinearLayout
+                        android:layout_height="20dp"
+                        android:layout_width="0dp"
+                        android:background="#E8ECEF"
+                        android:gravity="center"
+                        android:layout_weight="4"
+                        android:padding="1dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:background="#FFFFFF"
+                            android:textSize="15dp"
+                            android:text="경력직으로 변경 "
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:clickable="true"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Draw Short Line -->
+            <View
+                android:layout_height="0.3dp"
+                android:layout_width="wrap_content"
+                android:background="#E8ECEF"/>
+
+            <!-- First Block - 한줄 소개 -->
+            <LinearLayout
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="15dp">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:textSize="15dp"
+                    android:text="한줄 소개"
+                    android:layout_weight="4"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:background="#00000000"
+                    android:textSize="15dp"
+                    android:text="나에 대해 한줄로 소개해주세요 "
+                    android:gravity="left"
+                    android:layout_weight="10"
+                    android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Draw Long Line -->
+        <View
+            android:layout_height="0.3dp"
+            android:layout_width="match_parent"
+            android:background="#E8ECEF"/>
+
+        <!-- Empty Space -->
+        <LinearLayout
+            android:layout_height="10dp"
+            android:layout_width="match_parent"/>
+
+        <!-- Draw Long Line -->
+        <View
+            android:layout_height="0.3dp"
+            android:layout_width="match_parent"
+            android:background="#E8ECEF"/>
+
+        <!-- Second Block -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="10dp">
+
+            <!-- Second Block - 희망 근무 조건 -->
+            <LinearLayout
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="15dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:textSize="15dp"
+                    android:text="희망 근무 조건"
+                    android:layout_weight="4"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:background="#00000000"
+                    android:textSize="15dp"
+                    android:textColor="#16A7F6"
+                    android:text="강원대(춘천) 컴퓨터과학전공(4년) 졸업예정 > "
+                    android:gravity="left"
+                    android:layout_weight="10"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <!-- Draw Short Line -->
+            <View
+                android:layout_height="0.3dp"
+                android:layout_width="wrap_content"
+                android:background="#E8ECEF"/>
+
+            <!-- Second Block - 자기소개서 -->
+            <LinearLayout
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="15dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:textSize="15dp"
+                    android:text="자기소개서"
+                    android:layout_weight="4"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:background="#00000000"
+                    android:textSize="15dp"
+                    android:textColor="#16A7F6"
+                    android:text="[ 맡은 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ "
+                    android:gravity="left"
+                    android:layout_weight="10"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_resume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#16A7F6"
+                android:text="이력서 추가하기"/>
+
+            <!-- Draw Short Line -->
+            <View
+                android:layout_height="0.3dp"
+                android:layout_width="wrap_content"
+                android:background="#E8ECEF"/>
+        </LinearLayout>
+
+        <!-- Draw Long Line -->
+        <View
+            android:layout_height="0.3dp"
+            android:layout_width="match_parent"
+            android:background="#E8ECEF"/>
+
+        <!-- Empty Space -->
+        <LinearLayout
+            android:layout_height="10dp"
+            android:layout_width="match_parent">
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
