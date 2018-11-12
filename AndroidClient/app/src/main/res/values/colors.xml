@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="profile_blue">#16A7F6</color>
+    <color name="profile_person_name">#F3FE28</color>
+    <color name="background_gray">#E8ECEF</color>
+</resources>
