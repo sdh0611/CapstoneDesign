@@ -22,7 +22,7 @@
                 android:id="@+id/loginID"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:hint="ID"/>
+                android:hint="ID" />
 
             <EditText
                 android:id="@+id/loginPW"
