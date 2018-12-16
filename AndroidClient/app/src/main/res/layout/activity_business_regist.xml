@@ -102,11 +102,11 @@
             android:layout_weight="1"/>
 
         <EditText
-            android:id="@+id/business_regist_Age"
+            android:id="@+id/business_regist_Part"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="예)컨설팅"
-            android:layout_weight="10"/>
+            android:layout_weight="10"
+            android:hint="예)컨설팅" />
     </LinearLayout>
 
     <LinearLayout

@@ -2,11 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginTypeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    android:gravity="center"
     android:orientation="vertical"
-    android:gravity="center">
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/loginTypeRadioGroup"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/loginPersonal"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/IdOfTheRadioButtonInsideThatTobeChecked"
+                android:text="개인 회원" />
+
+            <RadioButton
+                android:id="@+id/loginBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기업 회원" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -22,14 +52,14 @@
                 android:id="@+id/loginID"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:hint="ID"/>
+                android:hint="ID" />
 
             <EditText
                 android:id="@+id/loginPW"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/loginID"
-                android:hint="PassWord"/>
+                android:hint="PassWord" />
         </RelativeLayout>
 
         <Button
@@ -37,14 +67,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="로그인"/>
+            android:text="로그인" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/personRegist"
@@ -52,14 +82,14 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
             android:clickable="true"
-            android:text="개인회원가입"/>
+            android:text="개인회원가입" />
 
         <TextView
             android:id="@+id/businessRegist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:text="기업회원가입"/>
+            android:text="기업회원가입" />
     </LinearLayout>
 
 </LinearLayout>

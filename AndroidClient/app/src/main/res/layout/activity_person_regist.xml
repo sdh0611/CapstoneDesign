@@ -83,11 +83,11 @@
             android:layout_weight="1"/>
 
         <EditText
-            android:id="@+id/paerson_regist_Name"
+            android:id="@+id/person_regist_Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="예)홍길동"
-            android:layout_weight="4"/>
+            android:layout_weight="4"
+            android:hint="예)홍길동" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -96,11 +96,11 @@
             android:layout_weight="1"/>
 
         <EditText
-            android:id="@+id/paerson_regist_Age"
+            android:id="@+id/person_regist_Age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="예)23"
-            android:layout_weight="3"/>
+            android:layout_weight="3"
+            android:hint="예)23" />
     </LinearLayout>
 
     <LinearLayout
@@ -115,11 +115,11 @@
             android:layout_weight="1"/>
 
         <EditText
-            android:id="@+id/paerson_regist_Email"
+            android:id="@+id/person_regist_Email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="예)bin_park@kangwon.ac.kr"
-            android:layout_weight="8"/>
+            android:layout_weight="8"
+            android:hint="예)bin_park@kangwon.ac.kr" />
     </LinearLayout>
 
     <LinearLayout

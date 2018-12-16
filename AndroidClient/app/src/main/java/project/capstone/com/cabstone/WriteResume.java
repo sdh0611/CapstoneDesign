@@ -15,7 +15,7 @@ public class WriteResume extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_write_resume);
+        setContentView(R.layout.activity_write_resume_business);
 
         cancelBtn=(Button)findViewById(R.id.resume_Cancel);
         idPicture=(ImageView)findViewById(R.id.regist_ID_pic);
